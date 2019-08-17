@@ -28,6 +28,8 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation:
 
+// When `nestedFunction` is called, it cannot find the variable `internal` in its local scope so it looks outside its scope to find the variable `internal`. It finds the variable `internal` in the scope of `myFunction`, its parent function. Therefore, it uses the variable `internal` from `myFunction`.
+
 const external = "I'm outside the function";
 
 function myFunction() {
